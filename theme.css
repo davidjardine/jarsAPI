@@ -1,0 +1,305 @@
+/***********************************************************************/
+/*                                                                     */
+/*                           THEME COLOURS                             */
+/*                                                                     */
+/***********************************************************************/
+
+/* Main Colours */
+@property --primary {syntax:"<color>";inherits:false;initial-value:rgb(5,5,5);}
+@property --secondary {syntax:"<color>";inherits:false;initial-value:rgb(247,206,70);}
+@property --alternate {syntax:"<color>";inherits:false;initial-value:rgb(235,78,61);}
+
+/* High Contrast Options for the Main Colours*/
+@property --primary-hc {syntax:"<color>";inherits:false;initial-value:rgb(250,250,250);}
+@property --secondary-hc {syntax:"<color>";inherits:false;initial-value:rgb(240,240,240);}
+@property --alternate-hc {syntax:"<color>";inherits:false;initial-value:rgb(240,240,240);}
+
+/* Text Colours */
+@property --text-default {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+@property --text-quote {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+@property --text-highlight {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+@property --link-important {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+
+/* Link Colours */
+@property --link-default {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+@property --link-hover {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+@property --link-active {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+@property --link-visited {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+@property --link-disabled {syntax:"<color>";inherits:false;initial-value:rgb(0,0,0);}
+
+/* Page Background Colours */
+@property --bg-primary {syntax:"<color>";inherits:false;initial-value:rgb(250,250,250);}
+
+/* Border Colours */
+@property --border-primary {syntax:"<color>";inherits:false;initial-value:rgb(5,5,5);}
+@property --border-secondary {syntax:"<color>";inherits:false;initial-value:rgb(25,25,25);}
+
+/***********************************************************************/
+/*                                                                     */
+/*                           SITE WIDE THEME                           */
+/*                                                                     */
+/***********************************************************************/
+
+/* FORCE BODY TAG TO 100% WIDTH AND SET SITE-WIDE DEFAULT FONT */
+body {
+	width: 100%;
+	background: var(--bg-primary);
+	h1,h2,h3,h4,h5,h6 {
+		font-family: LibMono-Reg, monospace;
+	}
+	p,a,li,q,blockquote {
+		font-family: Garamond-Reg, serif;
+	}
+}
+
+/* SITE-WIDE NAV STYLE */
+nav {
+	background: var(--primary);
+	.container {
+		display: flex;
+		a {
+			padding: 10px;
+			color: var(--white);
+			font-family: LibMono-Reg;
+			text-decoration: none;
+		}
+		a:hover {
+			background: var(--white);
+			color: var(--black);
+		}
+	}
+}
+
+section.hero {
+	height: 50vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+}
+
+details {
+	outline: 1px solid var(--primary);
+	summary {
+		background: var(--primary);
+		color: var(--white);
+		padding: 10px;
+	}
+	p {
+		padding: 10px;
+	}
+}
+
+footer {
+	background: var(--primary);
+	color: var(--white);
+	padding: 50px;
+}
+
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                         SEMANTIC TAG STYLES                         */
+/*                                                                     */
+/***********************************************************************/
+
+pre {
+
+}
+
+blockquote {
+
+}
+
+q {
+
+}
+
+ul,ol {
+	list-style-position: inside;
+}
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                             TEXT STYLES                             */
+/*                                                                     */
+/***********************************************************************/
+
+/* Default sizes for text-based HTML tags */
+h1, h2, h3, h4, h5, h6 { padding: 6px 0px 12px 0px; }
+p, a { font-size: 16pt; padding: 4px 0px; }
+
+/* Theme text sizes */
+p.sm { font-size: 10pt }
+p.med { font-size: 14pt }
+p.lg { font-size: 18pt }
+p.xl { font-size: 22pt }
+p.tagline { font-size: 24pt; padding: 32px 6px; }
+
+/* For larger screens */
+@media only screen and (min-width: 700px) {
+	h1 { font-size: 40pt; }
+	h2 { font-size: 32pt; }
+	h3 { font-size: 24pt; }
+	h4 { font-size: 18pt; }
+	h5 { font-size: 16pt; }
+	h6 { font-size: 16pt; }
+	p.sm { font-size: 14pt }
+	p.med { font-size: 16pt }
+	p.lg { font-size: 20pt }
+	p.xl { font-size: 26pt }
+}
+
+
+
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                           LINK STYLES                               */
+/*                                                                     */
+/***********************************************************************/
+
+a {
+	text-decoration: underline;
+	font-weight: 900;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a.cta {
+	background: var(--primary);
+	border: none;
+	outline: none;
+	padding: 12px 24px;
+	border-radius: 10px;
+	font-family: LibMono-Bold, monospace;
+	color: var(--white);
+	text-decoration: none;
+}
+
+a.cta:hover {
+	background: var(--grey50);
+	color: var(--black);
+}
+
+
+a[class^="btn-"] {
+	margin: 150px 10px;
+	font-family: LibMono-Bold, monospace;
+}
+
+
+a.btn-primary {
+	background: var(--primary);
+	color: var(--white);
+	padding: 8px 16px;
+	border: none;
+	outline: none;
+	text-decoration: none;
+}
+
+a.btn-primary:hover {
+	background: var(--grey20);
+	color: var(--black);
+}
+
+a.btn-secondary {
+	background: none;
+	border: none;
+	outline: 1px solid var(--primary);
+	padding: 8px 16px;
+	color: var(--primary);
+	text-decoration: none;
+}
+
+a.btn-secondary:hover {
+	background: var(--grey20);
+	outline: none;
+}
+
+
+
+
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                           TABLE STYLES                              */
+/*                                                                     */
+/***********************************************************************/
+
+table { border-color: var(--border-primary); }
+table.headers1 { th { background: var(--primary); color: var(--white); } }
+
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                           BUTTON STYLES                             */
+/*                                                                     */
+/***********************************************************************/
+
+button { padding: 10px 20px; background: var(--bg-primary); }
+
+button.fill { background: var(--primary); color: var(--white); }
+button.fill:hover { background: var(--white); color: var(--primary); }
+
+button.outline { outline: 2px solid var(--primary); color: var(--primary); background: var(--white);}
+button.outline:hover { outline: none; color: var(--white); background: var(--primary); }
+
+button.squared { border-radius: 0px }
+button.rounded { border-radius: 10px }
+button.circular { border-radius: 25px }
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                       SEPARATOR LINE STYLES                         */
+/*                                                                     */
+/***********************************************************************/
+
+hr { border:1px solid var(--grey50);margin:50px 0px; }
+
+hr.null10 { border:none; margin:10px 0px }
+hr.null25 { border:none; margin:25px 0px }
+hr.null50 { border:none; margin:50px 0px }
+hr.null100 { border:none; margin:100px 0px }
+
+
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                               MISC                                  */
+/*                                                                     */
+/***********************************************************************/
+
+div.swatch {
+	min-height:75px; min-width:75px;
+	max-height:250px; max-width:250px;
+	margin: 10px;
+	aspect-ratio: 1/1;
+	border-radius:50%;
+}
+
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                      PAGE TEMPLATE THEMES                           */
+/*                                                                     */
+/***********************************************************************/
+
+
+/* STYLES FOR THE "post" PAGE TYPE */
+body.post {
+
+}
+
+
+
+
