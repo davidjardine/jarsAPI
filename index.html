@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="config.css">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<link rel="stylesheet" type="text/css" href="theme.css">
+</head>
+
+<body>
+	<nav>
+		<div class="container">
+			<a class="site-icon" href="#">Home</a>
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+			</ul>	
+		</div>
+	</nav>
+
+	<section class="hero">
+		<div class="container">
+			<h1>JARS-webkit Index Page</h1>
+			<p class="tagline">Your guide to using the JARS Web Kit</p>
+			<a class="cta" href="#">View the full documentation</a>
+		</div>
+	</section>
+
+	<main>
+		<div class="container">
+			
+			
+			<hr>
+
+			<h2>Paragraph Styles</h2>
+			<p class="sm">This is small paragraph text.</p>
+			<p class="med">This is medium (default) paragraph text.</p>
+			<p class="lg">This is large paragraph text.</p>
+			<p class="xl">This is x-large paragraph text.</p>
+
+			<hr>
+
+			<h2>Lists</h2>
+
+			<h3>Unordered List</h3>
+			<ul>
+				<li>Item one</li>
+				<li>Item two</li>
+				<li>Item three</li>
+			</ul>
+
+			<h3>Ordered List</h3>
+			<ol>
+				<li>Item one</li>
+				<li>Item two</li>
+				<li>Item three</li>
+			</ol>
+
+			<hr>
+
+			<h2>Link Styles</h2>
+			<p>Simple Links as Buttons</p>
+			<a href="#" class="btn-primary">Button Primary</a>
+			<a href="#" class="btn-secondary">Button Secondary</a>
+			<p>Inline Links</p>
+			<a href="#">Click Mee
+			<hr>
+
+			<h2>Preset Colours</h2>
+			<h3>Theme Colours</h3>
+			<table class="border-outside align-center short-wide headers1">
+				<tr>
+					<th>Primary Theme Colour</th>
+					<th>Secondary Theme Colour</th>
+					<th>Alternate Theme Colour</th>
+				</tr>
+				<tr>
+					<td>var(--primary)</td>
+					<td>var(--secondary)</td>
+					<td>var(--alternate)</td>
+				</tr>
+				<tr>
+					<td><div class="swatch swatch-primary"></div></td>
+					<td><div class="swatch swatch-secondary"></div></td>
+					<td><div class="swatch swatch-alternate"></div></td>
+				</tr>
+			</table>
+
+			<hr class="null25">
+
+			<h3>RGB Colour Gradients</h3>
+			<p>These built-in colours give a range of each of the primary webdev colours (R, G, B) from dark to light.</p>
+			<table class="border-rows align-center short-wide headers1">
+				<tr>
+					<td></td>
+					<th>50</th>
+					<th>100</th>
+					<th>150</th>
+					<th>200</th>
+					<th>250</th>
+				</tr>
+				<tr>
+					<th>var(--red###)</th>
+					<td><div class="swatch swatch-red50"></div></td>
+					<td><div class="swatch swatch-red100"></div></td>
+					<td><div class="swatch swatch-red150"></div></td>
+					<td><div class="swatch swatch-red200"></div></td>
+					<td><div class="swatch swatch-red250"></div></td>
+				</tr>
+				<tr>
+					<th>var(--green###)</th>
+					<td><div class="swatch swatch-green50"></div></td>
+					<td><div class="swatch swatch-green100"></div></td>
+					<td><div class="swatch swatch-green150"></div></td>
+					<td><div class="swatch swatch-green200"></div></td>
+					<td><div class="swatch swatch-green250"></div></td>
+				</tr>
+				<tr>
+					<th>var(--blue###)</th>
+					<td><div class="swatch swatch-blue50"></div></td>
+					<td><div class="swatch swatch-blue100"></div></td>
+					<td><div class="swatch swatch-blue150"></div></td>
+					<td><div class="swatch swatch-blue200"></div></td>
+					<td><div class="swatch swatch-blue250"></div></td>
+				</tr>
+			</table>
+
+			<hr class="null25">
+
+			<h3>6-Colour Scales</h3>
+			<p>These built-in colours give the 6 traditional colours seen in the rainbow with 3 variants of vibrance or intensity.</p>
+			<br>
+			<table class="border-rows align-center short-narrow headers1">
+				<tr>
+					<th></th>
+					<th>red</th>
+					<th>orange</th>
+					<th>yellow</th>
+					<th>green</th>
+					<th>blue</th>
+					<th>purple</th>
+				</tr>
+				<tr>
+					<td>
+						<p>PASTEL SCALE</p>
+						<p>var(--sp-color)</p>
+					</td>
+					<td><div class="swatch swatch-sp-red"></div></td>
+					<td><div class="swatch swatch-sp-orange"></div></td>
+					<td><div class="swatch swatch-sp-yellow"></div></td>
+					<td><div class="swatch swatch-sp-green"></div></td>
+					<td><div class="swatch swatch-sp-blue"></div></td>
+					<td><div class="swatch swatch-sp-purple"></div></td>
+				</tr>
+				<tr>
+					<td>
+						<p>MEDIUM SCALE</p>
+						<p>var(--sm-color)</p>
+					</td>
+					<td><div class="swatch swatch-sm-red"></div></td>
+					<td><div class="swatch swatch-sm-orange"></div></td>
+					<td><div class="swatch swatch-sm-yellow"></div></td>
+					<td><div class="swatch swatch-sm-green"></div></td>
+					<td><div class="swatch swatch-sm-blue"></div></td>
+					<td><div class="swatch swatch-sm-purple"></div></td>
+				</tr>
+				<tr>
+					<td>
+						<p>NEON SCALE</p>
+						<p>var(--sn-color)</p>
+					</td>
+					<td><div class="swatch swatch-sn-red"></div></td>
+					<td><div class="swatch swatch-sn-orange"></div></td>
+					<td><div class="swatch swatch-sn-yellow"></div></td>
+					<td><div class="swatch swatch-sn-green"></div></td>
+					<td><div class="swatch swatch-sn-blue"></div></td>
+					<td><div class="swatch swatch-sn-purple"></div></td>
+				</tr>
+			</table>
+
+
+			<hr>
+
+
+			<h2>Buttons</h2>
+			<table class="border-rows align-center short-wide headers1">
+				<tr>
+					<th>Button Type</th>
+					<th>Square</th>
+					<th>Rounded</th>
+					<th>Circular</th>
+				</tr>
+				<tr>
+					<td>Primary Button</td>
+					<td><button class="fill squared">Click Me!</button></td>
+					<td><button class="fill rounded">Click Me!</button></td>
+					<td><button class="fill circular">Click Me!</button></td>
+				</tr>
+				<tr>
+					<td>Secondary Button</td>
+					<td><button class="outline squared">Click Me!</button></td>
+					<td><button class="outline rounded">Click Me!</button></td>
+					<td><button class="outline circular">Click Me!</button></td>
+				</tr>
+				<tr>
+					<td>Action Button (icon)</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+
+
+			<hr class="null25">
+
+
+			<h2>Tables</h2>
+			<table class="border-all short-wide headers1">
+				<tr>
+					<th></th>
+					<th>Small</th>
+					<th>Medium</th>
+					<th>Large</th>
+				</tr>
+				<tr>
+					<td>Primary Button</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Secondary Button</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Action Button (icon)</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+
+			<hr>
+
+			<h2>Image Gallery - Grid</h2>
+			<p>This image gallery crops the images to display them all as squares and sets them to 200px.</p>
+			<hr class="null10">
+
+			<div class="gallery-grid">
+				<img src="img/garden.jpg">
+				<img src="img/garden.jpg">
+				<img src="img/garden2.jpg">
+				<img src="img/garden.jpg">
+				<img src="img/garden2.jpg">
+			</div>
+
+			<hr class="null10">
+
+			<h2>Image Gallery - Free</h2>
+			<p>This image gallery forces the height to 300px but allows the full image width to display.</p>
+			<hr class="null10">
+
+			<div class="gallery-free">
+				<img src="img/garden.jpg">
+				<img src="img/garden.jpg">
+				<img src="img/garden2.jpg">
+				<img src="img/garden.jpg">
+				<img src="img/garden2.jpg">
+				<img src="img/garden2.jpg">
+				<img src="img/garden.jpg">
+				<img src="img/garden2.jpg">
+			</div>
+
+			<hr class="null25">
+
+			
+
+			
+
+
+			<hr>
+
+			<h2>Layout Elements</h2>
+
+			<hr class="null25">
+			<h3>Basic Flexboxes</h3>
+			<p>Each of the following can be used as a class for any element, not just div.</p>
+
+			<hr class="null10">
+
+			<ol style="display:flex;flex-flow:column nowrap;gap:25px;">
+				<li>
+					<b>First make a parent flexbox element by using one of the following classes on any html element:</b>
+					<ul class="flexrow-wrap gap20">
+						<li>flexrow-wrap</li>
+						<li>flexrow-nowrap</li>
+						<li>flexcol-wrap</li>
+						<li>flexcol-nowrap</li>
+					</ul>
+				</li>
+				<li>
+					<b>Then you can add one of the following classes to set the alignment along the main-axis of that parent flexbox.</b>
+					<ul class="flexrow-wrap gap20">
+						<li>just-start</li>
+						<li>just-mid</li>
+						<li>just-end</li>
+						<li>just-left</li>
+						<li>just-right</li>
+						<li>just-stretch</li>
+						<li>just-around</li>
+						<li>just-between</li>
+						<li>just-even</li>
+					</ul>
+				</li>
+				<li>
+					<b>Then you can add one of the following classes to set the alignment along the cross-axis of that parent flexbox.</b>
+					<ul class="flexrow-wrap gap20">
+						<li>align-start</li>
+						<li>align-mid</li>
+						<li>align-end</li>
+						<li>align-stretch</li>
+						<li>align-anchor</li>
+						<li>align-base</li>
+						<li>align-base-first</li>
+						<li>align-base-last</li>
+					</ul>
+				</li>
+			</ol>
+
+			<hr class="null50">
+
+			<h3>Accordions</h3>
+			<p>Details and summary tags</p>
+			<hr class="null10">
+			<details>
+				<summary>This is the summary</summary>
+				<p>And when you click on the summary you can read this paragraph!</p>
+			</details>
+
+			<hr class="null50">
+
+			<h3>Empty Split Sections</h3>
+			<p>Each corresponds to a flexbox with div children, and are applied to section tags. The numbers in the boxes shows the ratio of the size of that box to the other boz(es) in the row. The name of these classes all start with "split" followed by the ratio separated with dashes. So the first example would be <b>class="split-1-2"</b>. The borders are only enabled here to help visualize, but would not be enabled by default.</p>
+
+			<hr class="null10">
+
+			<section class="split-1-2 show-borders">
+				<div><p>1</p></div>
+				<div><p>2</p></div>
+			</section>
+			<hr class="null10">
+
+			<section class="split-2-1 show-borders">
+				<div><p>1</p></div>
+				<div><p>2</p></div>
+			</section>
+			<hr class="null10">
+
+			<section class="split-1-3 show-borders">
+				<div><p>1</p></div>
+				<div><p>3</p></div>
+			</section>
+			<hr class="null10">
+
+			<section class="split-3-1 show-borders">
+				<div><p>3</p></div>
+				<div><p>1</p></div>
+			</section>
+			<hr class="null10">
+
+			<section class="split-2-1-1 show-borders">
+				<div><p>2</p></div>
+				<div><p>1</p></div>
+				<div><p>1</p></div>
+			</section>
+			<hr class="null10">
+
+			<section class="split-1-1-2 show-borders">
+				<div><p>1</p></div>
+				<div><p>1</p></div>
+				<div><p>2</p></div>
+			</section>
+			<hr class="null10">
+
+			<section class="split-1-2-2 show-borders">
+				<div><p>1</p></div>
+				<div><p>2</p></div>
+				<div><p>2</p></div>
+			</section>
+			<hr class="null10">
+
+			<section class="split-2-2-1 show-borders">
+				<div><p>2</p></div>
+				<div><p>2</p></div>
+				<div><p>1</p></div>
+			</section>
+			<hr class="null10">
+
+			<section class="split-1-2-1 show-borders">
+				<div><p>1</p></div>
+				<div><p>2</p></div>
+				<div><p>1</p></div>
+			</section>
+			<hr class="null10">
+
+			<section class="split-2-1-2 show-borders">
+				<div><p>2</p></div>
+				<div><p>1</p></div>
+				<div><p>2</p></div>
+			</section>
+			<hr class="null25">
+
+			<h2>Animations</h2>
+			<hr class="null10">
+
+			<h3>Fade In</h3>
+			<img class="fadein" src="img/garden.jpg">
+			<hr class="null10">
+
+			<h3>Floating</h3>
+			<img class="floating" src="img/garden.jpg">
+			<hr class="null10">
+
+
+		</div>
+	</main>
+
+	<hr class="null25">
+
+	<footer>
+		<div class="container">
+			<p>Footer text</p>
+		</div>
+	</footer>
+</body>
+</html>
