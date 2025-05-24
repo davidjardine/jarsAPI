@@ -3,7 +3,7 @@ Custom API written with PHP to be a RESTful web application together with a MySQ
 ## Directory Organization
 The directory is ordered as follows:
 - jarsAPI
-- - php_api
+  - php_api
 
 
 ## Formatting
