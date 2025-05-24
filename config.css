@@ -1,0 +1,229 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                          TESTING STYLES                             */
+/*                                                                     */
+/***********************************************************************/
+
+* { border: none red 1px; }
+
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                          BASIC COLOURS                              */
+/*                                                                     */
+/***********************************************************************/
+
+/* NEAR BLACK AND WHITE */
+@property --black {syntax:"<color>";inherits:false;initial-value:rgb(5,5,5);}
+@property --white {syntax:"<color>";inherits:false;initial-value:rgb(250,250,250);}
+
+/* GREYSCALE */
+@property --grey90 {syntax:"<color>";inherits:false;initial-value:rgb(25,25,25);}
+@property --grey80 {syntax:"<color>";inherits:false;initial-value:rgb(50,50,50);}
+@property --grey70 {syntax:"<color>";inherits:false;initial-value:rgb(75,75,75);}
+@property --grey60 {syntax:"<color>";inherits:false;initial-value:rgb(100,100,100);}
+@property --grey50 {syntax:"<color>";inherits:false;initial-value:rgb(125,125,125);}
+@property --grey40 {syntax:"<color>";inherits:false;initial-value:rgb(150,150,150);}
+@property --grey30 {syntax:"<color>";inherits:false;initial-value:rgb(175,175,175);}
+@property --grey20 {syntax:"<color>";inherits:false;initial-value:rgb(200,200,200);}
+@property --grey10 {syntax:"<color>";inherits:false;initial-value:rgb(225,225,225);}
+
+/* SHADES OF RED */
+@property --red50 {syntax:"<color>";inherits:false;initial-value:rgb(50,0,0);}
+@property --red100 {syntax:"<color>";inherits:false;initial-value:rgb(100,0,0);}
+@property --red150 {syntax:"<color>";inherits:false;initial-value:rgb(150,0,0);}
+@property --red200 {syntax:"<color>";inherits:false;initial-value:rgb(200,0,0);}
+@property --red250 {syntax:"<color>";inherits:false;initial-value:rgb(250,0,0);}
+
+/* SHADES OF GREEN */
+@property --green50 {syntax:"<color>";inherits:false;initial-value:rgb(0,50,0);}
+@property --green100 {syntax:"<color>";inherits:false;initial-value:rgb(0,100,0);}
+@property --green150 {syntax:"<color>";inherits:false;initial-value:rgb(0,150,0);}
+@property --green200 {syntax:"<color>";inherits:false;initial-value:rgb(0,200,0);}
+@property --green250 {syntax:"<color>";inherits:false;initial-value:rgb(0,250,0);}
+
+/* SHADES OF BLUE */
+@property --blue50 {syntax:"<color>";inherits:false;initial-value:rgb(0,0,50);}
+@property --blue100 {syntax:"<color>";inherits:false;initial-value:rgb(0,0,100);}
+@property --blue150 {syntax:"<color>";inherits:false;initial-value:rgb(0,0,150);}
+@property --blue200 {syntax:"<color>";inherits:false;initial-value:rgb(0,0,200);}
+@property --blue250 {syntax:"<color>";inherits:false;initial-value:rgb(0,0,250);}
+
+/* RED TO PURPLE SCALE - MEDIUM (SM) */
+@property --sm-red {syntax:"<color>";inherits:false;initial-value:rgb(235,78,61);}
+@property --sm-orange {syntax:"<color>";inherits:false;initial-value:rgb(241,154,56);}
+@property --sm-yellow {syntax:"<color>";inherits:false;initial-value:rgb(247,206,70);}
+@property --sm-green {syntax:"<color>";inherits:false;initial-value:rgb(101,196,103);}
+@property --sm-blue {syntax:"<color>";inherits:false;initial-value:rgb(50,120,247);}
+@property --sm-purple {syntax:"<color>";inherits:false;initial-value:rgb(163,87,213);}
+
+/* RED TO PURPLE SCALE - PASTEL (SP) */
+@property --sp-red {syntax:"<color>";inherits:false;initial-value:rgb(245, 146, 135);}
+@property --sp-orange {syntax:"<color>";inherits:false;initial-value:rgb(242, 191, 133);}
+@property --sp-yellow {syntax:"<color>";inherits:false;initial-value:rgb(237, 215, 142);}
+@property --sp-green {syntax:"<color>";inherits:false;initial-value:rgb(168, 224, 169);}
+@property --sp-blue {syntax:"<color>";inherits:false;initial-value:rgb(145, 174, 227);}
+@property --sp-purple {syntax:"<color>";inherits:false;initial-value:rgb(202, 166, 227);}
+
+/* RED TO PURPLE SCALE - NEON (SN) */
+@property --sn-red {syntax:"<color>";inherits:false;initial-value:rgb(255, 0, 0);}
+@property --sn-orange {syntax:"<color>";inherits:false;initial-value:rgb(255, 136, 0);}
+@property --sn-yellow {syntax:"<color>";inherits:false;initial-value:rgb(255, 240, 0);}
+@property --sn-green {syntax:"<color>";inherits:false;initial-value:rgb(0,255,0);}
+@property --sn-blue {syntax:"<color>";inherits:false;initial-value:rgb(0,0,255);}
+@property --sn-purple {syntax:"<color>";inherits:false;initial-value:rgb(162, 0, 255);}
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                               FONTS                                 */
+/*                                                                     */
+/***********************************************************************/
+
+/* LIBERATION MONO */
+@font-face {font-family: LibMono-Reg;src: local("Liberation Mono"), url("fonts/LiberationMono-Regular.ttf"), format("truetype");}
+@font-face {font-family: LibMono-Bold;src: local("Liberation Mono Bold"), url("fonts/LiberationMono-Bold.ttf"), format("truetype")}
+@font-face {font-family: LibMono-Italic;src: local("Liberation Mono Italic"), url("fonts/LiberationMono-Italic.ttf"), format("truetype");}
+@font-face {font-family: LibMono-BoldItalic;src: local("Liberation Mono Bold Italic"), url("fonts/LiberationMono-BoldItalic.ttf"), format("truetype");}
+
+/* Garamond */
+@font-face {font-family: Garamond-Reg;src: local("Garamond"), url("fonts/Garamond.ttf"), format("truetype");}
+@font-face {font-family: Garamond-Bold;src: local("Garamond Bold"), url("fonts/Garamond-Bold.ttf"), format("truetype");}
+@font-face {font-family: Garamond-Italic;src: local("Garamond Italic"), url("fonts/Garamond-Italic.ttf"), format("truetype");}
+@font-face {font-family: Garamond-BoldItalic;src: local("Garamond Bold Italic"), url("fonts/Garamond.ttf"), format("truetype");}
+
+
+
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                       ANIMATION VARIABLES                           */
+/*                                                                     */
+/***********************************************************************/
+
+
+/* SHINE EFFECT */
+@property --shine03 {syntax:"<color>";inherits:false;initial-value:rgb(255,255,255,0.03);}
+@property --shine06 {syntax:"<color>";inherits:false;initial-value:rgb(255,255,255,0.06);}
+@property --shine09 {syntax:"<color>";inherits:false;initial-value:rgb(255,255,255,0.09);}
+@property --shine12 {syntax:"<color>";inherits:false;initial-value:rgb(255,255,255,0.12);}
+@property --shine15 {syntax:"<color>";inherits:false;initial-value:rgb(255,255,255,0.15);}
+@property --shine18 {syntax:"<color>";inherits:false;initial-value:rgb(255,255,255,0.18);}
+@property --shine21 {syntax:"<color>";inherits:false;initial-value:rgb(255,255,255,0.21);}
+@property --shine24 {syntax:"<color>";inherits:false;initial-value:rgb(255,255,255,0.24);}
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                          MOVING GRADIENTS                           */
+/*                                                                     */
+/************************************************************************
+
+Using keyframes and animations, the following two are the same:                              		
+p { animation-duration: 3s; animation-name: slide-in; animation-iteration-count: infinite; animation-direction: alternate; }
+p { animation: 3s slide-in infinite alternate; } */
+
+
+@keyframes wave-grey {
+	from { background: linear-gradient(150deg, var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey90)); }
+	25% { background: linear-gradient(150deg, var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey80),var(--grey90),var(--grey90)); }
+	50% { background: linear-gradient(150deg, var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey80),var(--grey70),var(--grey80),var(--grey90)); }
+	75% { background: linear-gradient(150deg, var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey80),var(--grey90),var(--grey90)); }
+	to { background: linear-gradient(150deg, var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey90),var(--grey90)); }
+}
+
+@keyframes navbar-shine {
+	from { background: linear-gradient(150deg, var(--shine03),var(--shine03),var(--shine03),var(--shine03),var(--shine06),var(--shine03)), rgb(0,0,0,1.0); }
+	18% { background: linear-gradient(150deg, var(--shine03),var(--shine03),var(--shine03),var(--shine03),var(--shine06),var(--shine03)), rgb(0,0,0,1.0); }
+	35% { background: linear-gradient(150deg, var(--shine03),var(--shine03),var(--shine03),var(--shine06),var(--shine09),var(--shine06)), rgb(0,0,0,1.0); }
+	52% { background: linear-gradient(150deg, var(--shine03),var(--shine03),var(--shine03),var(--shine09),var(--shine12),var(--shine06)), rgb(0,0,0,1.0); }
+	70% { background: linear-gradient(150deg, var(--shine03),var(--shine03),var(--shine03),var(--shine12),var(--shine18),var(--shine09)), rgb(0,0,0,1.0); }
+	85% { background: linear-gradient(150deg, var(--shine03),var(--shine03),var(--shine03),var(--shine15),var(--shine21),var(--shine12)), rgb(0,0,0,1.0); }
+	to { background: linear-gradient(150deg, var(--shine03),var(--shine03),var(--shine03),var(--shine18),var(--shine24),var(--shine15)), rgb(0,0,0,1.0); }
+}
+
+
+
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                        FADE INs / OUTs                              */
+/*                                                                     */
+/***********************************************************************/
+
+@keyframes fade {
+	from { opacity:0% }
+	to { opacity:100% }
+}
+
+
+@keyframes floating {
+	from { box-shadow: 6px 6px 16px grey; }
+	to { box-shadow: 0px 0px 8px grey; }
+}
+
+
+
+
+
+
+/***********************************************************************/
+/*                                                                     */
+/*                   SWATCH COLOURS FOR INDEX.HTML                     */
+/*                                                                     */
+/*                this entire section can be deleted if you            */
+/*                aren't using the default index.html page             */
+/*                                                                     */
+/***********************************************************************/
+
+.swatch-primary { background-color:var(--primary); }
+.swatch-secondary { background-color:var(--secondary); }
+.swatch-alternate { background-color:var(--alternate); }
+
+.swatch-red50 { background-color:var(--red50); }
+.swatch-red100 { background-color:var(--red100); }
+.swatch-red150 { background-color:var(--red150); }
+.swatch-red200 { background-color:var(--red200); }
+.swatch-red250 { background-color:var(--red250); }
+
+.swatch-green50 { background-color:var(--green50); }
+.swatch-green100 { background-color:var(--green100); }
+.swatch-green150 { background-color:var(--green150); }
+.swatch-green200 { background-color:var(--green200); }
+.swatch-green250 { background-color:var(--green250); }
+
+.swatch-blue50 { background-color:var(--blue50); }
+.swatch-blue100 { background-color:var(--blue100); }
+.swatch-blue150 { background-color:var(--blue150); }
+.swatch-blue200 { background-color:var(--blue200); }
+.swatch-blue250 { background-color:var(--blue250); }
+
+.swatch-sm-red { background-color:var(--sm-red); }
+.swatch-sm-orange { background-color:var(--sm-orange); }
+.swatch-sm-yellow { background-color:var(--sm-yellow); }
+.swatch-sm-green { background-color:var(--sm-green); }
+.swatch-sm-blue { background-color:var(--sm-blue); }
+.swatch-sm-purple { background-color:var(--sm-purple); }
+
+.swatch-sp-red { background-color:var(--sp-red); }
+.swatch-sp-orange { background-color:var(--sp-orange); }
+.swatch-sp-yellow { background-color:var(--sp-yellow); }
+.swatch-sp-green { background-color:var(--sp-green); }
+.swatch-sp-blue { background-color:var(--sp-blue); }
+.swatch-sp-purple { background-color:var(--sp-purple); }
+
+.swatch-sn-red { background-color:var(--sn-red); }
+.swatch-sn-orange { background-color:var(--sn-orange); }
+.swatch-sn-yellow { background-color:var(--sn-yellow); }
+.swatch-sn-green { background-color:var(--sn-green); }
+.swatch-sn-blue { background-color:var(--sn-blue); }
+.swatch-sn-purple { background-color:var(--sn-purple); }
